@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("TestLinkXmlConverter")]
+[assembly: AssemblyTitle("XlsToTestLinkXmlConverter.Core")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("TestLinkXmlConverter")]
+[assembly: AssemblyProduct("XlsToTestLinkXmlConverter.Core")]
 [assembly: AssemblyCopyright("Copyright ©  2019")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("9b59012c-253b-42e4-bd34-662cb5581061")]
+[assembly: Guid("f39a20e7-8c96-45ec-95f7-8cb21cbec1eb")]
 
 // Version information for an assembly consists of the following four values:
 //

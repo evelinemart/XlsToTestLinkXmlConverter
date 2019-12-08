@@ -1,0 +1,25 @@
+﻿<Window x:Class="XlsToTestLinkXmlConverter.UI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:XlsToTestLinkXmlConverter.UI"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel x:Name="MainPanel" HorizontalAlignment="Center" VerticalAlignment="Center" SizeChanged="StackPanel_SizeChanged">
+        <StackPanel Orientation="Horizontal">
+            <Button x:Name="BtnOpenFile" Content="Open xls file" Margin="10" VerticalAlignment="Top" Width="150" Padding="5" HorizontalAlignment="Left" Click="BtnOpenFile_Click"/>
+            <TextBox x:Name="TxtXlsFilePath" Padding="5" Margin="10" Text="Opened file path will appear here..." IsReadOnly="True"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label x:Name="LblProgress" Content="Processing file..."/>
+            <ProgressBar x:Name="ProgressFile" SmallChange="0.1" Padding="5" Height="20" Width="286"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Button x:Name="BtnSaveFile" Content="Save xml file" Margin="10" HorizontalAlignment="Left" VerticalAlignment="Top" Width="150" Padding="5" HorizontalContentAlignment="Center" Click="BtnSaveFile_Click"/>
+            <TextBox x:Name="TxtXmlFilePath" Padding="5" Margin="10" Text="Saved file path will appear here..." IsReadOnly="True"/>
+        </StackPanel>
+        <Label x:Name="LblSaveProgress" Content=""/>
+        <Button x:Name="BtnClose" Content="Close" Margin="10" HorizontalAlignment="Center" VerticalAlignment="Top" Width="150" Padding="5" Click="BtnClose_Click"/>
+    </StackPanel>
+</Window>
