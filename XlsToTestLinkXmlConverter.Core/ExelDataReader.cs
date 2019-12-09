@@ -26,7 +26,7 @@ namespace XlsToTestLinkXmlConverter.Core
                         while (reader.Read())
                         {
                             string name = (string)reader.GetValue(0);
-                            if (name == nameof(TestCaseModel.name) || (reader.IsDBNull(0) && reader.IsDBNull(1) && reader.IsDBNull(2) && reader.IsDBNull(3) && reader.IsDBNull(4) &&
+                            if (name.Equals(nameof(TestCaseModel.name), StringComparison.InvariantCultureIgnoreCase) || (reader.IsDBNull(0) && reader.IsDBNull(1) && reader.IsDBNull(2) && reader.IsDBNull(3) && reader.IsDBNull(4) &&
                                 reader.IsDBNull(5) && reader.IsDBNull(6) && reader.IsDBNull(7) && reader.IsDBNull(8)))
                                 continue;
                             if (!string.IsNullOrEmpty(name?.Trim()))
