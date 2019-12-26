@@ -1,0 +1,21 @@
+﻿<Page x:Class="XlsToTestLinkXmlConverter.UI.Pages.ConvertProcessingPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:XlsToTestLinkXmlConverter.UI.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="ConvertProcessingPage">
+
+    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+        <StackPanel Orientation="Horizontal" Margin="10">
+            <Label x:Name="LblProgress" Content="Processing file..."/>
+            <ProgressBar x:Name="ProgressFile" SmallChange="0.1" Padding="5" Height="20" Width="286"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="10">
+            <Button x:Name="BtnSave" Content="Choose folder for xml files" Margin="10" HorizontalAlignment="Left" VerticalAlignment="Top" Width="150" Padding="5" HorizontalContentAlignment="Center" Click="BtnSaveFile_Click"/>
+            <TextBox x:Name="TxtXmlFolderPath" Padding="5" Margin="10" Text="Folder path will appear here..." IsReadOnly="True"/>
+        </StackPanel>
+    </StackPanel>
+</Page>

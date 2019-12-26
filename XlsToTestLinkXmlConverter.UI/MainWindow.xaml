@@ -6,20 +6,20 @@
         xmlns:local="clr-namespace:XlsToTestLinkXmlConverter.UI"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <StackPanel x:Name="MainPanel" HorizontalAlignment="Center" VerticalAlignment="Center" SizeChanged="StackPanel_SizeChanged">
-        <StackPanel Orientation="Horizontal">
-            <Button x:Name="BtnOpenFile" Content="Open xls file" Margin="10" VerticalAlignment="Top" Width="150" Padding="5" HorizontalAlignment="Left" Click="BtnOpenFile_Click"/>
-            <TextBox x:Name="TxtXlsFilePath" Padding="5" Margin="10" Text="Opened file path will appear here..." IsReadOnly="True"/>
-        </StackPanel>
-        <StackPanel Orientation="Horizontal">
-            <Label x:Name="LblProgress" Content="Processing file..."/>
-            <ProgressBar x:Name="ProgressFile" SmallChange="0.1" Padding="5" Height="20" Width="286"/>
-        </StackPanel>
-        <StackPanel Orientation="Horizontal">
-            <Button x:Name="BtnSaveFile" Content="Save xml file" Margin="10" HorizontalAlignment="Left" VerticalAlignment="Top" Width="150" Padding="5" HorizontalContentAlignment="Center" Click="BtnSaveFile_Click"/>
-            <TextBox x:Name="TxtXmlFilePath" Padding="5" Margin="10" Text="Saved file path will appear here..." IsReadOnly="True"/>
-        </StackPanel>
-        <Label x:Name="LblSaveProgress" Content=""/>
-        <Button x:Name="BtnClose" Content="Close" Margin="10" HorizontalAlignment="Center" VerticalAlignment="Top" Width="150" Padding="5" Click="BtnClose_Click"/>
+    <StackPanel x:Name="MainPanel" SizeChanged="StackPanel_SizeChanged">
+        <Menu>
+            <MenuItem Header="File">
+                <MenuItem x:Name="MenuConvert" Header="Convert xls" Click="MenuConvert_Click"/>
+                <MenuItem x:Name="MenuExportExample" Header="Export sample xls" Click="MenuExportExample_Click"/>
+                <MenuItem x:Name="MenuExit" Header="Exit" Click="MenuExit_Click"/>
+            </MenuItem>
+            <MenuItem Header="Settings">
+                <MenuItem x:Name="MenuSetBasicMapping" Header="Basic fields mapping" Click="MenuSetBasicMapping_Click"/>
+                <MenuItem x:Name="MenuSetCustomMapping" Header="Custom fields mapping" Click="MenuSetCustomMapping_Click"/>
+                <MenuItem x:Name="MenuSetKeywordsMapping" Header="Keywords mapping" Click="MenuSetKeywordsMapping_Click"/>
+            </MenuItem>
+            <MenuItem x:Name="MenuHelp" Header="Help" Click="MenuHelp_Click"/>
+        </Menu>
+        <Frame x:Name="mainFrame"/>
     </StackPanel>
 </Window>

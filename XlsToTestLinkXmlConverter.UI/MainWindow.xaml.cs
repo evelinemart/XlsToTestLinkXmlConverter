@@ -64,6 +64,41 @@ namespace XlsToTestLinkXmlConverter.UI
             worker.RunWorkerAsync();
         }
 
+        private void MenuConvert_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void MenuExportExample_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void MenuExit_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void MenuSetBasicMapping_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void MenuSetCustomMapping_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void MenuSetKeywordsMapping_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void MenuHelp_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
         private void BtnSaveFile_Click(object sender, RoutedEventArgs e)
         {
             if(xDocument != null)

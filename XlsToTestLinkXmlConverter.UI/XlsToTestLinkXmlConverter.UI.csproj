@@ -65,8 +65,43 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Pages\CheckFieldsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\ConvertingPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\ConvertProcessingPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\ExportExamplePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\SetMappingPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Pages\CheckFieldsPage.xaml.cs">
+      <DependentUpon>CheckFieldsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ConvertingPage.xaml.cs">
+      <DependentUpon>ConvertingPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ConvertProcessingPage.xaml.cs">
+      <DependentUpon>ConvertProcessingPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ExportExamplePage.xaml.cs">
+      <DependentUpon>ExportExamplePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\SetMappingPage.xaml.cs">
+      <DependentUpon>SetMappingPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
